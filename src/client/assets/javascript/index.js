@@ -389,7 +389,7 @@ function startRace(id) {
             method: 'POST',
             ...defaultFetchOpts(),
         })
-        .then(res => res.json())
+        .then(res => {})
         .catch(err => console.log("Problem with startRace request::", err))
 }
 
@@ -399,6 +399,6 @@ function accelerate(id) {
             method: 'POST',
             ...defaultFetchOpts(),
         })
-        .then(res => res.json())
+        .then(res => {})
         .catch(err => console.log("Problem with accelerate request::", err))
 }
